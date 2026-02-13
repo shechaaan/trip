@@ -1,0 +1,38 @@
+# trip
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Travel Log</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+</head>
+<body>
+
+<h1>✈️ Travel Log</h1>
+
+<h2>旅行を記録</h2>
+
+<input id="place" placeholder="場所">
+<input id="date" type="date">
+<input id="memo" placeholder="メモ">
+<input id="rating" type="number" min="1" max="5" placeholder="評価(1〜5)">
+<input type="file" id="photo">
+
+<p>👉 地図をクリックすると座標が入ります</p>
+<input id="lat" placeholder="緯度">
+<input id="lng" placeholder="経度">
+
+<button onclick="addTrip()">追加</button>
+
+<h2>記録一覧</h2>
+<div id="tripList"></div>
+
+<h2>思い出マップ</h2>
+<div id="map"></div>
+
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
